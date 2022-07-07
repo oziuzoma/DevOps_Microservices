@@ -5,13 +5,13 @@
 
 # Step 1:
 # Create dockerpath
-dockerpath=oziomauzoma/project3-app
+dockerpath=oziomauzoma/project4-mlapp
 
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
-docker tag ozi oziomauzoma/project3-app:v1.0.0
+docker tag ozi $dockerpath:v1.0.0
 docker login
 # Step 3:
 # Push image to a docker repository
-docker push oziomauzoma/project3-app:v1.0.0
+docker push $dockerpath:v1.0.0
