@@ -10,7 +10,7 @@ dockerpath=oziomauzoma/project4-mlapp
 # Run the Docker Hub container with kubernetes
 kubectl run mlapp\
     --generator=run-pod/v1\
-    --image=$dockerpath\
+    --image=$dockerpath:v1.0.0\
     --port=80 --labels app=mlapp
 
 # Step 3:
